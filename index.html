@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102647">
+  <meta name="description" content="시간이 지나 달라진 얼굴, 우리는 얼마나 알아볼 수 있을까요? 장기 실종아동과 AI 현재 모습 추정 기술에 대한 3분 인식조사에 참여해주세요.">
+  <meta property="og:title" content="FindUs — 시간이 지나도, 찾는 마음은 이어집니다">
+  <meta property="og:description" content="장기 실종아동 인식조사. 여러분의 3분이 FindUs의 방향을 만듭니다.">
+  <meta property="og:type" content="website">
+  <title>FindUs | 장기 실종아동 인식조사</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="FindUs 처음으로"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M16 2 29 7v11c0 8-13 15-13 15S3 26 3 18V7Z"/><path class="brand-check" d="m10 17 4 4 8-9"/></svg>Find<span>Us</span></a>
+      <nav aria-label="주요 메뉴"><a href="#idea">FindUs 소개</a><a href="#principles">안전 원칙</a><div class="reading-progress journey-progress" id="reading-progress" hidden>
+          <div class="journey-track" role="progressbar" aria-label="프로젝트 설명 스크롤 진행률" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <svg class="journey-scene" viewBox="0 0 240 66" aria-hidden="true">
+              <path id="journey-road" class="journey-road" d="M16 43 C42 43 44 29 76 29 S118 48 150 40 S177 25 218 43"/>
+              <path class="journey-travelled" d="M16 43 C42 43 44 29 76 29 S118 48 150 40 S177 25 218 43"/>
+              <g class="journey-family" transform="translate(218 43)">
+                <g class="parent-one" transform="translate(-15 0)"><circle class="family-head" cx="0" cy="-29" r="7"/><path class="family-body" d="M-6-17Q0-22 6-17L8-5Q0-1-8-5Z"/><path class="family-limbs" d="M-4-4-5 5m9-9 5 9m-15-19-5 7m17-7 5 7"/></g>
+                <g class="parent-two" transform="translate(15 0)"><circle class="family-head" cx="0" cy="-29" r="7"/><path class="family-body" d="M-6-17Q0-22 6-17L8-5Q0-1-8-5Z"/><path class="family-limbs" d="M-4-4-5 5m9-9 5 9m-15-19-5 7m17-7 5 7"/></g>
+              </g>
+              <g id="journey-child" class="journey-child" transform="translate(16 43)">
+                <g class="child-figure" transform="scale(.65)"><circle class="family-head" cx="0" cy="-29" r="7"/><path class="family-body" d="M-6-17Q0-22 6-17L8-5Q0-1-8-5Z"/><path class="family-limbs" d="M-4-4-5 5m9-9 5 9m-15-19-5 7m17-7 5 7"/></g>
+              </g>
+              <path class="journey-heart" d="M218 9c-7-5-4-10 0-7 4-3 7 2 0 7Z" fill="#82c9cc"/>
+            </svg>
+          </div>
+        </div></nav>
+    </div>
+    <svg class="header-cloud" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true">
+      <path class="cloud-layer cloud-back" d="M0 0H1440V31C1406 48 1351 57 1307 39C1264 65 1193 55 1161 36C1119 46 1087 64 1037 49C988 70 924 55 898 36C853 55 808 63 758 42C716 57 669 60 640 40C579 67 517 61 473 37C439 51 392 63 355 44C302 63 242 56 215 36C166 53 98 60 56 40C31 46 13 43 0 36Z"/>
+      <path class="cloud-layer cloud-middle" d="M0 0H1440V20C1381 41 1343 38 1314 24C1278 44 1218 42 1186 23C1155 29 1139 40 1090 35C1048 49 1000 40 966 21C922 43 866 44 821 29C786 48 736 36 714 19C653 43 602 46 558 28C523 35 492 40 452 22C411 43 361 42 319 23C279 37 235 43 197 26C147 46 102 36 79 19C48 35 21 35 0 24Z"/>
+      <path class="cloud-layer cloud-front" d="M0 0H1440V8C1400 27 1361 30 1320 15C1283 32 1242 26 1218 11C1170 30 1114 28 1079 13C1054 22 1027 32 992 23C951 34 911 21 886 9C844 28 792 33 751 17C718 27 683 28 659 13C614 34 558 27 531 11C492 27 446 30 413 17C381 30 343 22 322 10C276 31 220 28 188 13C153 27 119 29 87 16C49 31 23 21 0 12Z"/>
+    </svg>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> 장기 실종아동 찾기를 위한 첫걸음</p>
+          <h1 id="hero-title">어릴 적 사진 너머,<br><span>지금의 모습을<br>떠올릴 수 있도록.</span></h1>
+          <p class="hero-description">FindUs는 AI 현재 모습 추정으로<br>장기 실종아동 찾기를 돕는 서비스 아이디어입니다.</p>
+          <span class="stage-tag">서비스 개발 · 수요 검증 중</span>
+        </div>
+        <figure class="hero-photo">
+          <img src="./assets/time-portrait.png" width="1068" height="1332" alt="서로 바라보는 어린이와 성인의 설명용 예시 사진. 실제 실종아동 사진이 아닙니다.">
+          <figcaption><span>어린 시절 예시</span><span>현재 모습 예시</span></figcaption>
+        </figure>
+        <p class="hero-example-note">어린 시절과 현재 모습 모두 설명용 예시이며, 실제 실종 사례가 아닙니다.</p>
+      </div>
+    </section>
+
+    <section class="problem section container" id="problem" aria-labelledby="problem-title">
+      <div class="section-heading"><p class="eyebrow">우리가 바라보는 문제</p><h2 id="problem-title">40년 전 사진으로,<br>지금의 얼굴을 알아볼 수 있을까요?</h2></div>
+      <div class="time-line" aria-label="과거 사진과 현재 모습 사이의 시간 차이"><div><span class="time-year">1986</span><strong>사진 속 어린 얼굴</strong></div><div class="time-track"><span>40년의 시간</span><i aria-hidden="true"></i></div><div><span class="time-year">2026</span><strong>지금은 어떤 모습일까?</strong></div></div>
+      <p class="problem-summary">시간이 흐를수록, 과거 사진만으로 현재 모습을 떠올리기 어렵습니다.</p>
+    </section>
+
+    <section class="idea section" id="idea" aria-labelledby="idea-title"><div class="container">
+      <div class="section-heading"><p class="eyebrow">FindUs의 아이디어</p><h2 id="idea-title">과거 사진 + 현재의 단서.<br>찾는 데 도움이 될까요?</h2></div>
+      <div class="visual-flow">
+        <article class="flow-card"><div class="flow-visual photo-half photo-past"><img src="./assets/time-comparison-v2.png" alt="제공 사진을 바탕으로 재구성한 어린 시절 모습, 설명용 AI 생성 예시" width="1536" height="1024" loading="lazy"></div><span class="flow-kicker">어린 시절 예시</span><h3>실종 당시 사진</h3></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article class="flow-card"><div class="flow-visual current photo-half photo-current"><span class="image-badge">AI 추정 예시</span><img src="./assets/time-comparison-v2.png" alt="제공 사진을 바탕으로 재구성한 성인 모습, 설명용 AI 생성 예시" width="1536" height="1024" loading="lazy"></div><span class="flow-kicker">현재의 모습을 떠올릴 단서</span><h3>AI 현재 모습 추정</h3></article>
+        <span class="flow-arrow" aria-hidden="true">→</span>
+        <article class="flow-card"><div class="flow-visual report"><img src="./assets/topic-care.svg" alt="공식기관을 통한 확인을 나타내는 방패와 체크 그림" width="160" height="124" loading="lazy"></div><span class="flow-kicker">두 모습을 비교하고 정보 확인</span><h3>공식기관 제보 연결</h3></article>
+      </div>
+      <p class="example-note">사진을 바탕으로 만든 AI 생성 예시 · 실제 실종 사례나 검증된 추정 결과가 아닙니다.</p>
+    </div></section>
+
+    <section class="survey section container" aria-labelledby="survey-title">
+      <div class="section-heading"><p class="eyebrow">여러분의 의견이 필요한 이유</p><h2 id="survey-title">여러분의 관심이,<br>장기 실종아동 찾기에 힘이 됩니다.</h2><p class="section-description">여러분의 의견으로, 찾는 데 도움이 되는 서비스를 만들어갑니다.</p></div>
+      <div class="topic-grid">
+        <article class="topic-card"><img src="./assets/topic-interest.svg" width="160" height="124" alt="관심을 표현하는 하트와 시민 일러스트" loading="lazy"><div><h3>문제에 대한 관심</h3><p>장기 실종아동 문제,<br>어떻게 바라보시나요?</p></div></article>
+        <article class="topic-card"><img src="./assets/topic-ai.svg" width="160" height="124" alt="과거와 현재의 얼굴을 연결한 비교 카드 일러스트" loading="lazy"><div><h3>AI 기술의 가능성</h3><p>현재 모습 추정,<br>도움이 될까요?</p></div></article>
+        <article class="topic-card"><img src="./assets/topic-action.svg" width="160" height="124" alt="정보 확인과 행동을 표현하는 휴대전화 일러스트" loading="lazy"><div><h3>정보를 접한 뒤의 행동</h3><p>무엇을 하고,<br>왜 제보를 망설일까요?</p></div></article>
+        <article class="topic-card"><img src="./assets/topic-care.svg" width="160" height="124" alt="안전과 우려를 표현하는 방패 일러스트" loading="lazy"><div><h3>AI 활용에 대한 우려</h3><p>예상 얼굴을 사용할 때,<br>무엇이 걱정되시나요?</p></div></article>
+      </div>
+    </section>
+
+    <section class="principles container" id="principles" aria-labelledby="principles-title"><img src="./assets/topic-care.svg" width="160" height="124" alt="" loading="lazy"><div><h2 id="principles-title">공개 정보만, AI는 참고용으로.</h2><p>신원 정보는 <strong>경찰청 안전Dream의 공개 범위 내에서만</strong> 제공합니다.</p><p>AI가 생성한 현재 예상 모습은 참고용 추정 이미지이며 실제 모습과 다를 수 있습니다.</p><p>실제 신원 확인은 경찰 등 공식기관의 절차를 통해 이루어집니다.</p></div></section>
+
+    <section class="final-cta" id="participate" aria-labelledby="final-title"><div class="container final-inner"><div><p class="eyebrow">관심을 이어가는 3분</p><h2 id="final-title">장기 실종아동 찾기,<br>여러분의 관심으로 함께해주세요.</h2></div><div class="final-action"><a id="survey-link" aria-describedby="survey-status" class="button button-light" href="https://forms.cloud.microsoft/r/7tnUFtYiPE" target="_blank" rel="noopener noreferrer">3분 설문 참여하기 <span aria-hidden="true">↗</span><span class="sr-only"> (Microsoft Forms, 새 탭)</span></a><p class="cta-note">약 3분 · Microsoft Forms</p><p id="survey-status" class="survey-status" role="status"></p></div></div></section>
+  </main>
+  <footer class="container footer"><a class="brand" href="#home">Find<span>Us</span></a><p>장기 실종아동 찾기를 돕는 서비스 아이디어 · 공식기관 운영 서비스가 아닙니다.</p><span>© <span id="year">2026</span> FindUs</span></footer>
+</body>
+</html>
